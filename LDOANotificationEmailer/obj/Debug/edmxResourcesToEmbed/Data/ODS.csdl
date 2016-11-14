@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ODSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="View_TERMS">
+    <Key>
+      <PropertyRef Name="TERMS_ID" />
+    </Key>
+    <Property Name="TERMS_ID" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TERMS_START_DATE" Type="DateTime" Precision="3" />
+    <Property Name="TERMS_END_DATE" Type="DateTime" Precision="3" />
+    <Property Name="COUNT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="TERM_PREREG_START_DATE" Type="DateTime" Precision="3" />
+    <Property Name="TERM_ORDER" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TERM_REPORTING_YEAR" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="TERM_SEQUENCE_NO" Type="Decimal" Precision="3" Scale="0" />
+    <Property Name="TERM_MEAL_START_DATE" Type="DateTime" Precision="3" />
+    <Property Name="GRADE_VERIFY_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="ODSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="View_TERMS" EntityType="Self.View_TERMS" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mailSettings>
+  <sendInstructorEmail days="1,5,10,12,15,16,17,18,19,20,21"/>
+  <!--<sendDivisionChairEmail days="10,12,15,16,17,18,19,20,21"/> -->
+  <sendDivisionChairEmail days="10" />
+  <firstNotice days="1"/>
+  <secondNotice days="5"/>
+  <thirdNotice days="10"/>
+  <fourthNotice days="12"/>
+  <fifthNotice days="15,16,17,18,19,20,21"/>
+</mailSettings>

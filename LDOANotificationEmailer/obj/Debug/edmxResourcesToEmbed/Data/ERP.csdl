@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ERPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ERPEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetDivisionChairEmail" ReturnType="Collection(String)">
+      <Parameter Name="DepartmentCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetUnfinishedLDOA" ReturnType="Collection(ERPModel.GetUnfinishedLDOA_Result)">
+      <Parameter Name="Term" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetUnfinishedLDOA_Result">
+    <Property Type="String" Name="StudentName" Nullable="false" MaxLength="51" />
+    <Property Type="String" Name="StudentEmail" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="StudentNumber" Nullable="false" />
+    <Property Type="String" Name="StudentGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="InstructorName" Nullable="true" MaxLength="51" />
+    <Property Type="String" Name="InstructorEmail" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CourseSection" Nullable="true" MaxLength="21" />
+    <Property Type="String" Name="Term" Nullable="true" MaxLength="7" />
+    <Property Type="DateTime" Name="DateDropped" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>

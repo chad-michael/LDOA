@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="odsDataSet" targetNamespace="http://tempuri.org/odsDataSet.xsd" xmlns:mstns="http://tempuri.org/odsDataSet.xsd" xmlns="http://tempuri.org/odsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="odsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="odsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LDOANotificationEmailer.Properties.Settings.GlobalReference.Default.odsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_TERMSTableAdapter" GeneratorDataComponentClassName="View_TERMSTableAdapter" Name="View_TERMS" UserDataComponentName="View_TERMSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="odsConnectionString (Settings)" DbObjectName="ods.dbo.View_TERMS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TERMS_ID, TERMS_START_DATE, TERMS_END_DATE, COUNT_DATE, TERM_PREREG_START_DATE, TERM_ORDER, TERM_REPORTING_YEAR, TERM_SEQUENCE_NO, TERM_MEAL_START_DATE, GRADE_VERIFY_DATE FROM dbo.View_TERMS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TERMS_ID" DataSetColumn="TERMS_ID" />
+              <Mapping SourceColumn="TERMS_START_DATE" DataSetColumn="TERMS_START_DATE" />
+              <Mapping SourceColumn="TERMS_END_DATE" DataSetColumn="TERMS_END_DATE" />
+              <Mapping SourceColumn="COUNT_DATE" DataSetColumn="COUNT_DATE" />
+              <Mapping SourceColumn="TERM_PREREG_START_DATE" DataSetColumn="TERM_PREREG_START_DATE" />
+              <Mapping SourceColumn="TERM_ORDER" DataSetColumn="TERM_ORDER" />
+              <Mapping SourceColumn="TERM_REPORTING_YEAR" DataSetColumn="TERM_REPORTING_YEAR" />
+              <Mapping SourceColumn="TERM_SEQUENCE_NO" DataSetColumn="TERM_SEQUENCE_NO" />
+              <Mapping SourceColumn="TERM_MEAL_START_DATE" DataSetColumn="TERM_MEAL_START_DATE" />
+              <Mapping SourceColumn="GRADE_VERIFY_DATE" DataSetColumn="GRADE_VERIFY_DATE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="odsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="odsDataSet" msprop:Generator_UserDSName="odsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_TERMS" msprop:Generator_TableClassName="View_TERMSDataTable" msprop:Generator_TableVarName="tableView_TERMS" msprop:Generator_TablePropName="View_TERMS" msprop:Generator_RowDeletingName="View_TERMSRowDeleting" msprop:Generator_RowChangingName="View_TERMSRowChanging" msprop:Generator_RowEvHandlerName="View_TERMSRowChangeEventHandler" msprop:Generator_RowDeletedName="View_TERMSRowDeleted" msprop:Generator_UserTableName="View_TERMS" msprop:Generator_RowChangedName="View_TERMSRowChanged" msprop:Generator_RowEvArgName="View_TERMSRowChangeEvent" msprop:Generator_RowClassName="View_TERMSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TERMS_ID" msprop:Generator_ColumnVarNameInTable="columnTERMS_ID" msprop:Generator_ColumnPropNameInRow="TERMS_ID" msprop:Generator_ColumnPropNameInTable="TERMS_IDColumn" msprop:Generator_UserColumnName="TERMS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TERMS_START_DATE" msprop:Generator_ColumnVarNameInTable="columnTERMS_START_DATE" msprop:Generator_ColumnPropNameInRow="TERMS_START_DATE" msprop:Generator_ColumnPropNameInTable="TERMS_START_DATEColumn" msprop:Generator_UserColumnName="TERMS_START_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TERMS_END_DATE" msprop:Generator_ColumnVarNameInTable="columnTERMS_END_DATE" msprop:Generator_ColumnPropNameInRow="TERMS_END_DATE" msprop:Generator_ColumnPropNameInTable="TERMS_END_DATEColumn" msprop:Generator_UserColumnName="TERMS_END_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COUNT_DATE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCOUNT_DATE" msprop:Generator_ColumnPropNameInRow="COUNT_DATE" msprop:Generator_ColumnPropNameInTable="COUNT_DATEColumn" msprop:Generator_UserColumnName="COUNT_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TERM_PREREG_START_DATE" msprop:Generator_ColumnVarNameInTable="columnTERM_PREREG_START_DATE" msprop:Generator_ColumnPropNameInRow="TERM_PREREG_START_DATE" msprop:Generator_ColumnPropNameInTable="TERM_PREREG_START_DATEColumn" msprop:Generator_UserColumnName="TERM_PREREG_START_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TERM_ORDER" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTERM_ORDER" msprop:Generator_ColumnPropNameInRow="TERM_ORDER" msprop:Generator_ColumnPropNameInTable="TERM_ORDERColumn" msprop:Generator_UserColumnName="TERM_ORDER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TERM_REPORTING_YEAR" msprop:Generator_ColumnVarNameInTable="columnTERM_REPORTING_YEAR" msprop:Generator_ColumnPropNameInRow="TERM_REPORTING_YEAR" msprop:Generator_ColumnPropNameInTable="TERM_REPORTING_YEARColumn" msprop:Generator_UserColumnName="TERM_REPORTING_YEAR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TERM_SEQUENCE_NO" msprop:Generator_ColumnVarNameInTable="columnTERM_SEQUENCE_NO" msprop:Generator_ColumnPropNameInRow="TERM_SEQUENCE_NO" msprop:Generator_ColumnPropNameInTable="TERM_SEQUENCE_NOColumn" msprop:Generator_UserColumnName="TERM_SEQUENCE_NO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TERM_MEAL_START_DATE" msprop:Generator_ColumnVarNameInTable="columnTERM_MEAL_START_DATE" msprop:Generator_ColumnPropNameInRow="TERM_MEAL_START_DATE" msprop:Generator_ColumnPropNameInTable="TERM_MEAL_START_DATEColumn" msprop:Generator_UserColumnName="TERM_MEAL_START_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GRADE_VERIFY_DATE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGRADE_VERIFY_DATE" msprop:Generator_ColumnPropNameInRow="GRADE_VERIFY_DATE" msprop:Generator_ColumnPropNameInTable="GRADE_VERIFY_DATEColumn" msprop:Generator_UserColumnName="GRADE_VERIFY_DATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_TERMS" />
+      <xs:field xpath="mstns:TERMS_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

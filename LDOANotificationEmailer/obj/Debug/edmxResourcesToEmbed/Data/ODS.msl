@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ODSModelStoreContainer" CdmEntityContainer="ODSEntities">
+    <EntitySetMapping Name="View_TERMS">
+      <EntityTypeMapping TypeName="ODSModel.View_TERMS">
+        <MappingFragment StoreEntitySet="View_TERMS">
+          <ScalarProperty Name="TERMS_ID" ColumnName="TERMS_ID" />
+          <ScalarProperty Name="TERMS_START_DATE" ColumnName="TERMS_START_DATE" />
+          <ScalarProperty Name="TERMS_END_DATE" ColumnName="TERMS_END_DATE" />
+          <ScalarProperty Name="COUNT_DATE" ColumnName="COUNT_DATE" />
+          <ScalarProperty Name="TERM_PREREG_START_DATE" ColumnName="TERM_PREREG_START_DATE" />
+          <ScalarProperty Name="TERM_ORDER" ColumnName="TERM_ORDER" />
+          <ScalarProperty Name="TERM_REPORTING_YEAR" ColumnName="TERM_REPORTING_YEAR" />
+          <ScalarProperty Name="TERM_SEQUENCE_NO" ColumnName="TERM_SEQUENCE_NO" />
+          <ScalarProperty Name="TERM_MEAL_START_DATE" ColumnName="TERM_MEAL_START_DATE" />
+          <ScalarProperty Name="GRADE_VERIFY_DATE" ColumnName="GRADE_VERIFY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

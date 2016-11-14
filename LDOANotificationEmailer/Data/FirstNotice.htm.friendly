@@ -1,0 +1,19 @@
+﻿<p>FACULTY_NAME,</p>
+
+<p>STUDENT_NAME (STUDENT_ID) dropped your COURSE_SECTION class on DROP_DATE.</p>
+
+<p>Federal Regulations require the last date of attendance to be reported within 14 days of a student dropping a course. In order to comply with regulations, the last date of attendance must be entered on or before LAST_DATE.</p>
+
+<p>Please use the following steps to enter the Last Date of Attendance for the above student:</p>
+
+Go to <a href="https://myportal.delta.edu/">MyPortal</a> > Quick Launch > MyDelta > Faculty > Grading
+<ul>
+<li>Click on Term.</li>
+<li>Click “Final” Grading and the class.</li>
+<li>On the grading roster, the student should already have W grade without a last date of attendance.</li>
+<li>Enter the Last Date of Attendance for the student.</li>
+<li>Click submit and a confirmation page will be displayed.</li>
+<li>Click submit, you will be taken back to the faculty menu.</li>
+</ul>
+Since this process is extremely time-sensitive, we ask that you immediately complete the steps above.  Additional emails will follow on the following time frame if attendance information is not completed:
+<p>Please contact <a href="mailto:keithmalkowski@delta.edu">Keith Malkowski</a> (9449) if you have any questions.</p>

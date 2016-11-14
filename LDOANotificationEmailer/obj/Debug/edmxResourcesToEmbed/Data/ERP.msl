@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERPModelStoreContainer" CdmEntityContainer="ERPEntities">
+    <FunctionImportMapping FunctionImportName="GetDivisionChairEmail" FunctionName="ERPModel.Store.GetDivisionChairEmail" />
+    <FunctionImportMapping FunctionImportName="GetUnfinishedLDOA" FunctionName="ERPModel.Store.GetUnfinishedLDOA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERPModel.GetUnfinishedLDOA_Result">
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="StudentEmail" ColumnName="StudentEmail" />
+          <ScalarProperty Name="StudentNumber" ColumnName="StudentNumber" />
+          <ScalarProperty Name="StudentGrade" ColumnName="StudentGrade" />
+          <ScalarProperty Name="InstructorName" ColumnName="InstructorName" />
+          <ScalarProperty Name="InstructorEmail" ColumnName="InstructorEmail" />
+          <ScalarProperty Name="CourseSection" ColumnName="CourseSection" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="DateDropped" ColumnName="DateDropped" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
